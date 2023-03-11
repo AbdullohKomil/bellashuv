@@ -94,9 +94,47 @@
 }
 
 .projects__item:nth-child(6) {
-    background-image: url('../../../images/projects-4.png');
+    background-image: url('../../../images/projects-1.png');
 }
 
+.projects__item:nth-child(7) {
+    background-image: url('../../../images/projects-2.png');
+}
+
+.projects__item:nth-child(8) {
+    background-image: url('../../../images/projects-3.png');
+    &::after {
+        content: 'Veb sayt';
+    }
+}
+
+.projects__item:nth-child(9) {
+    background-image: url('../../../images/projects-4.png');
+    &::after {
+        content: 'Ilova';
+    }
+}
+
+.projects__item:nth-child(10) {
+    background-image: url('../../../images/projects-5.png');
+    &::after {
+        content: 'SMM';
+    }
+}
+
+.projects__item:nth-child(11) {
+    background-image: url('../../../images/projects-1.png');
+    &::after {
+        content: 'Ilova';
+    }
+}
+
+.projects__item:nth-child(12) {
+    background-image: url('../../../images/projects-2.png');
+    &::after {
+        content: 'SMM';
+    }
+}
 
 
 
