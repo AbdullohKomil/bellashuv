@@ -1,5 +1,8 @@
 :root {
   --bg-body: #fff;
+  --main-color: #000;
+  --body-bgi: url('../../images/backgroundBody.svg');
+  --body-bg-pos: top center;
   --bg-header: #17191d1a;
   --header-links: #000;
   --border-mode-btn: 1px solid transparent;
@@ -11,6 +14,9 @@
 
 .dark {
   --bg-body: #111317;
+  --body-bgi: url('../../images/backgroundBodyDark.svg');
+  --body-bg-pos: top -450px center;
+  --main-color: #fff;
   --bg-header: #17191db3;
   --header-links: #fff;
   --border-mode-btn: 1px solid #aaaaaa;

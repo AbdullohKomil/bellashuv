@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 
-.nav__item + .nav__item {
+.nav__item+.nav__item {
   margin-left: 16px;
 }
 
@@ -41,6 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   input {
     display: none;
   }
@@ -75,7 +76,7 @@
     }
   }
 
-  input:checked ~ label::before {
+  input:checked~label::before {
     left: 54px !important;
     background-image: url('../../images/moon-icon-dark.svg');
     transition: all 0.3s ease;
@@ -101,7 +102,7 @@
     }
   }
 
-  span ~ button {
+  span~button {
     padding: 13px 21px 12px;
     font-weight: 700;
     font-size: 16px;
@@ -122,6 +123,7 @@
 
 .site-menu {
   position: absolute;
+  z-index: 6;
   width: 100%;
   background-color: rgba(23, 25, 29, 0.9);
   backdrop-filter: blur(5px);
@@ -138,7 +140,7 @@
     flex-direction: column;
     margin-top: 40px;
 
-    li + li {
+    li+li {
       margin-top: 30px;
     }
 
@@ -150,7 +152,7 @@
     }
   }
 
-  nav ~ a {
+  nav~a {
     position: absolute;
     bottom: 60px;
     left: 40px;
@@ -183,6 +185,7 @@
 }
 
 .mobile-theme {
+  display: none;
   width: 36px;
   height: 36px;
   background-image: var(--theme-icon);
@@ -203,6 +206,7 @@
   .site-header__main {
     span {
       margin: 0 25px;
+
       a:nth-child(1) {
         font-size: 17px;
         line-height: 22px;
@@ -214,7 +218,7 @@
       }
     }
 
-    span ~ button {
+    span~button {
       padding: 11px 18px 10px;
       font-size: 15px;
       line-height: 18px;
@@ -236,7 +240,7 @@
       display: none;
     }
 
-    span ~ button {
+    span~button {
       margin-left: 20px;
     }
   }
@@ -246,6 +250,11 @@
   .site-header__main {
     display: none;
   }
+
+
+  .mobile-theme {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 370px) {
@@ -254,7 +263,7 @@
       padding: 0 20px;
     }
 
-    nav ~ a {
+    nav~a {
       left: 20px;
       right: 20px;
       padding: 17px 35px 16px;
