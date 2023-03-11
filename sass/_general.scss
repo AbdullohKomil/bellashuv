@@ -25,14 +25,9 @@ body {
   background-repeat: no-repeat;
 }
 
-.news-body {
-  background-image: var(--body-bgi);
-  background-position: var(--body-bg-pos);
-  background-repeat: no-repeat;
-}
 
-.port-body {
-  background-image: url('../images/YangilikBg-min.png');
+.port-body, .news-body {
+  background-image: var(--second-bgi);
   background-position: center top;
   background-repeat: no-repeat;
 }
