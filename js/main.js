@@ -22,12 +22,12 @@ const closeMenu = () => {
   document.body.classList.remove('menu-open');
 };
 
-let Globe = document.querySelector('canvas');
+// let Globe = document.querySelector('canvas');
 
-if (window.innerWidth <= 1024) {
-  Globe.removeAttribute('width');
-  Globe.removeAttribute('height');
-  Globe.setAttribute('width', '476px');
-  Globe.setAttribute('height', '476px');
-  console.log(window);
-}
+// if (window.innerWidth <= 1024) {
+//   Globe.removeAttribute('width');
+//   Globe.removeAttribute('height');
+//   Globe.setAttribute('width', '476px');
+//   Globe.setAttribute('height', '476px');
+//   console.log(window);
+// }
