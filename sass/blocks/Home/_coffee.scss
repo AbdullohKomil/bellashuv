@@ -4,7 +4,7 @@
 
 .coffee__inner {
     padding: 60px 80px 120px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--coffee-bg);
     border: 1px solid #999999;
     backdrop-filter: blur(1px);
     border-radius: 20px;
