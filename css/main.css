@@ -917,4 +917,140 @@ p {
     transition: all 0.4s ease;
     max-width: 196px;
   }
+}
+.company {
+  padding-bottom: 95px;
+}
+
+.company__inner {
+  display: flex;
+}
+
+.company__left {
+  width: 50%;
+}
+
+.company__right {
+  width: 50%;
+}
+
+.company__title {
+  font-family: "Futura PT";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+}
+
+.company__text {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.company__text__span {
+  max-width: 600px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.company__cards {
+  margin-top: 145px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company__card {
+  width: 270px;
+  height: 88px;
+}
+.company__card:nth-child(1) {
+  margin-bottom: 40px;
+}
+.company__card:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.company__card__title {
+  background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911ad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Futura PT";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.company__card__text {
+  font-family: "Futura PT";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .company__card {
+    width: 170px;
+  }
+  .company__inner {
+    text-align: start !important;
+  }
+  .company__card:nth-child(1) {
+    margin-bottom: 30px !important;
+  }
+  .company__card:nth-child(2) {
+    margin-bottom: 30px !important;
+  }
+  .company__left {
+    width: 100%;
+  }
+  .company__right {
+    width: 100%;
+  }
+  .company__text__span {
+    max-width: 360px;
+    display: inline-block !important;
+  }
+  .company__text {
+    max-width: 360px;
+  }
+  .company__title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+  }
+  .company__cards {
+    margin-top: 58px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .company__inner {
+    display: block;
+    text-align: center;
+  }
+  .company__left {
+    margin: 0 auto;
+  }
+  .company__right {
+    margin: 0 auto;
+  }
+  .company__text__span {
+    display: inline;
+  }
+  .company__cards {
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .company__card {
+    margin-bottom: 0 !important;
+  }
 }/*# sourceMappingURL=main.css.map */
