@@ -16,6 +16,10 @@ body {
   margin: 0;
   background-color: var(--bg-body);
   font-family: 'Proxima Nova', 'Arial', sans-serif;
+  background-image: var(--body-bgi);
+  background-position: var(--body-bg-pos);
+  background-repeat: no-repeat;
+  color: var(--main-color);
 }
 
 main {
