@@ -1,4 +1,4 @@
-const LogoLink = document.querySelector('.logo');
+let LogoLink = document.querySelector('.logo');
 
 const theme = () => {
   document.body.classList.toggle('dark');
@@ -21,13 +21,3 @@ const menu = () => {
 const closeMenu = () => {
   document.body.classList.remove('menu-open');
 };
-
-// let Globe = document.querySelector('canvas');
-
-// if (window.innerWidth <= 1024) {
-//   Globe.removeAttribute('width');
-//   Globe.removeAttribute('height');
-//   Globe.setAttribute('width', '476px');
-//   Globe.setAttribute('height', '476px');
-//   console.log(window);
-// }

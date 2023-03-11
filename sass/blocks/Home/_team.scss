@@ -9,3 +9,127 @@
     color: var(--main-color);
   }
 }
+
+.team__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  .team__item {
+    position: relative;
+  }
+
+  .slick-track {
+    padding-bottom: 60px;
+  }
+
+  div.team__content {
+    position: absolute;
+    bottom: -50px;
+    left: 10px;
+    z-index: 5;
+    width: 100%;
+    max-width: 296px;
+    padding: 15px 0 11px;
+    background: var(--bg-services);
+    border: var(--border-services);
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+  }
+
+  .team__subtitle {
+    margin: 0 0 7px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--main);
+  }
+
+  .team__list__line {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    width: 100px;
+    height: 2px;
+    background-color: var(--team-line);
+  }
+
+  .team__subtitle ~ p {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--team-text);
+  }
+}
+
+.team__list .slick-prev {
+  top: 50% !important;
+  display: block;
+  width: 70px !important;
+  height: 70px !important;
+
+  background: var(--slick-btn) !important;
+  backdrop-filter: blur(2px) !important;
+  left: -70px !important;
+  border-radius: 50%;
+  z-index: 3;
+  &::before {
+    content: '' !important;
+    transform: rotate(180deg);
+    display: block;
+    background-position: center;
+    position: absolute;
+    left: calc(50% - 7px);
+    top: calc(50% - 12px) !important;
+    width: 14px !important;
+    height: 24px !important;
+    background-image: url('../../../images/slick-vector.svg') !important;
+  }
+}
+
+.team__list .slick-next {
+  top: 50% !important;
+  display: block;
+  width: 70px !important;
+  height: 70px !important;
+  background: var(--slick-btn) !important;
+  backdrop-filter: blur(2px) !important;
+  right: -70px !important;
+  border-radius: 50%;
+  z-index: 3;
+  &::before {
+    content: '' !important;
+    display: block;
+    background-position: center;
+    position: absolute;
+    left: calc(50% - 7px);
+    top: calc(50% - 12px) !important;
+    width: 14px !important;
+    height: 24px !important;
+    background-image: url('../../../images/slick-vector.svg') !important;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .team__item {
+    width: 100%;
+    max-width: 317px;
+    margin: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .team__item {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .team__item {
+    margin: 0;
+  }
+}

@@ -16,10 +16,25 @@ body {
   margin: 0;
   background-color: var(--bg-body);
   font-family: 'Proxima Nova', 'Arial', sans-serif;
+  color: var(--main-color);
+}
+
+.home-body {
   background-image: var(--body-bgi);
   background-position: var(--body-bg-pos);
   background-repeat: no-repeat;
-  color: var(--main-color);
+}
+
+.news-body {
+  background-image: var(--body-bgi);
+  background-position: var(--body-bg-pos);
+  background-repeat: no-repeat;
+}
+
+.port-body {
+  background-image: url('../images/YangilikBg-min.png');
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 main {
