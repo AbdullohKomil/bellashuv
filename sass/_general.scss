@@ -16,10 +16,20 @@ body {
   margin: 0;
   background-color: var(--bg-body);
   font-family: 'Proxima Nova', 'Arial', sans-serif;
+  color: var(--main-color);
+}
+
+.home-body {
   background-image: var(--body-bgi);
   background-position: var(--body-bg-pos);
   background-repeat: no-repeat;
-  color: var(--main-color);
+}
+
+
+.port-body, .news-body {
+  background-image: var(--second-bgi);
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 main {
