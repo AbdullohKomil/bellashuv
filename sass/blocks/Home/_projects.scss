@@ -1,0 +1,205 @@
+.projects {
+    padding: 0 0 120px;
+}
+
+.projects__title {
+    margin: 0 0 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.projects__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+    max-width: 550px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #999999;
+    backdrop-filter: blur(2px);
+    border-radius: 90px;
+}
+
+.projects__nav__item {
+    background: transparent;
+    padding: 16px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.projects__nav__item--active {
+    background: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+    color: #fff;
+}
+
+
+.projects__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 0 40px;
+}
+
+.projects__item {
+    padding: 15px;
+    min-height: 362px;
+    background-image: url('../../../images/projects-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+
+    &:hover .projects__link {
+        background: rgba(0, 0, 0, 0.87);
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+
+        &::after {
+            content: '';
+        }
+    }
+}
+
+.projects__item:nth-child(2) {
+    background-image: url('../../../images/projects-2.png');
+}
+.projects__item:nth-child(3) {
+    background-image: url('../../../images/projects-3.png');
+}
+.projects__item:nth-child(4) {
+    background-image: url('../../../images/projects-4.png');
+}
+.projects__item:nth-child(5) {
+    background-image: url('../../../images/projects-5.png');
+}
+.projects__item:nth-child(6) {
+    background-image: url('../../../images/projects-6.png');
+}
+
+.projects__link {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+
+    &::after {
+        display: block;
+        width: 87px;
+        height: 87px;
+        background-image: url('../../../images/arrow-up.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.projects__bottom {
+    max-width: 170px;
+    margin: 0 auto;
+    position: relative;
+
+    & a {
+        position: absolute;
+        border-radius: 141px;
+        padding: 25px 20px 15px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
+
+.projects__bottom__link {
+    background: #6911AD;
+    color: #fff;
+    z-index: 1;
+    max-width: 60px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &:hover {
+        max-width: 170px;
+        padding: 20px 20px 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+    .projects__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 924px) {
+    .projects__item {
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 596px) {
+    .projects__nav {
+        display: none;
+    }
+
+    .projects__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects {
+        padding: 0 0 80px;
+    }
+
+
+    .projects__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .projects__item:nth-child(4),
+    .projects__item:nth-child(5),
+    .projects__item:nth-child(6) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .projects__item {
+        min-height: 300px;
+    }
+
+    .projects__bottom a {
+        background: #6911AD;
+        color: #fff;
+        z-index: 1;
+        max-width: 170px;
+        padding: 13px 30px 13px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projects__item {
+        min-height: 300px;
+        padding: 15px !important;
+        background-size: auto;
+    }
+}
