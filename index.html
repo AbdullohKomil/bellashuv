@@ -2,74 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
-    <link
-      rel="stylesheet"
-      href="./css/main.css"
-    />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <div class="site-header__inner">
-          <button
-            onclick="menu()"
-            class="menu"
-          ></button>
-          <a
-            class="logo"
-            href="./index.html"
-          >
-            <img
-              src="./images/logo.svg"
-              alt="Logo"
-            />
+          <button onclick="menu()" class="menu"></button>
+          <a class="logo" href="./index.html">
+            <img src="./images/logo.svg" alt="Logo" />
           </a>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a
-                  class="nav__link"
-                  href="./news.html"
-                  >O компании</a
-                >
+                <a class="nav__link" href="./news.html">Biz haqimizda</a>
               </li>
               <li class="nav__item">
-                <a
-                  class="nav__link"
-                  href="./portfolio.html"
-                  >Портфолио</a
-                >
+                <a class="nav__link" href="./portfolio.html">Portfolio</a>
               </li>
               <li class="nav__item">
-                <a
-                  class="nav__link"
-                  href="./index.html"
-                  >Услуги</a
-                >
+                <a class="nav__link" href="./index.html">Xizmatlarimiz</a>
               </li>
               <li class="nav__item">
-                <a
-                  class="nav__link"
-                  href="./index.html"
-                  >О компании</a
-                >
+                <a class="nav__link" href="./index.html">Buyurtma berish</a>
               </li>
             </ul>
           </nav>
           <div class="site-header__main">
-            <input
-              type="checkbox"
-              id="theme-btn"
-            />
+            <input type="checkbox" id="theme-btn" />
             <label
               onclick="theme()"
               class="site-header__main__label"
@@ -81,10 +44,7 @@
             </span>
             <button>Заказать звонок</button>
           </div>
-          <button
-            onclick="theme()"
-            class="mobile-theme"
-          ></button>
+          <button onclick="theme()" class="mobile-theme"></button>
         </div>
       </div>
     </header>
@@ -103,27 +63,15 @@
                   Ut enim ad minim veniam.
                 </p>
                 <div class="hero__bottom">
-                  <a
-                    class="hero__link"
-                    href="./portfolio.html"
-                  >
-                    Портфолио
-                  </a>
-                  <a
-                    class="hero__link--2"
-                    href="./portfolio.html"
-                  >
+                  <a class="hero__link" href="./portfolio.html"> Портфолио </a>
+                  <a class="hero__link--2" href="./portfolio.html">
                     Портфолио
                   </a>
                 </div>
               </div>
               <div class="hero__globus">
                 <div>
-                  <canvas
-                    id="cobe"
-                    width="1200"
-                    height="1200"
-                  ></canvas>
+                  <canvas id="cobe" width="1200" height="1200"></canvas>
                 </div>
               </div>
             </div>
@@ -135,25 +83,22 @@
           <div class="company__inner">
             <div class="company__left">
               <h2 class="company__title">Kompaniya haqida</h2>
-              <p
-                class="company__text"
-                title="Kompaniya haqida"
-              >
+              <p class="company__text" title="Kompaniya haqida">
                 Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va
                 innovatsion echimlarni taqdim etish maqsadida tashkil etilgan
                 veb-agentlik. Bizning jamoamiz mijozlarga moslashtirilgan va
                 sifatli mahsulotni taklif qilish uchun yaqin hamkorlikda
                 ishlaydigan tajribali veb-dizayn, ishlab chiqish va marketing
                 mutaxassislaridan iborat.
-                <span class="company__text__span">
-                  Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish,
-                  SEO optimallashtirish, kontent yaratish va reklama
-                  kampaniyalarini o'z ichiga olgan keng ko'lamli xizmatlarni
-                  taklif etamiz. Biz eng yangi texnologiyalar va innovatsion
-                  usullardan foydalangan holda brendni rivojlantirish va
-                  sotishni ko'paytirish bilan shug'ullanamiz.
-                </span>
               </p>
+              <span class="company__text__span">
+                Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO
+                optimallashtirish, kontent yaratish va reklama kampaniyalarini
+                o'z ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz
+                eng yangi texnologiyalar va innovatsion usullardan foydalangan
+                holda brendni rivojlantirish va sotishni ko'paytirish bilan
+                shug'ullanamiz.
+              </span>
             </div>
             <div class="company__right">
               <div class="company__cards">
@@ -178,6 +123,48 @@
           </div>
         </div>
       </section>
+      <section class="services">
+        <div class="container">
+          <div class="services__inner">
+            <h2>Bizning xizmatlar</h2>
+            <ul class="services__list">
+              <li class="services__item">
+                <h3 class="services__subtitle">Veb saytlar</h3>
+                <p>
+                  Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
+                </p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">UI/UX Dizayn</h3>
+                <p>
+                  Biz UI/UX dizayn xizmatlarini <br />
+                  taqdim etamiz
+                </p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">Mobil ilovalar</h3>
+                <p>Biz eng yaxshi dizaynerlar xizmatlarini taqdim etamiz</p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">SMM</h3>
+                <p>
+                  Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
+                </p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">Grafik dizayn</h3>
+                <p>Biz fotografiya xizmatlarini <br />taqdim etamiz</p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">Motion dizayn</h3>
+                <p>
+                  Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- MENU -->
@@ -185,15 +172,9 @@
     <div class="site-menu">
       <div class="site-menu__header">
         <a href="./index.html">
-          <img
-            src="./images/logo-dark.svg"
-            alt="Logo"
-          />
+          <img src="./images/logo-dark.svg" alt="Logo" />
         </a>
-        <button
-          onclick="closeMenu()"
-          class="menu-close"
-        ></button>
+        <button onclick="closeMenu()" class="menu-close"></button>
       </div>
       <nav>
         <ul>
