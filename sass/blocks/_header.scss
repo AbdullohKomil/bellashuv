@@ -88,6 +88,7 @@
     margin: 0 31px 0 40px;
 
     a:nth-child(1) {
+      font-family: 'Arial';
       font-weight: 700;
       font-size: 20px;
       line-height: 24px;
@@ -95,6 +96,7 @@
     }
 
     a:nth-child(2) {
+      font-family: 'Arial';
       font-weight: 700;
       font-size: 14px;
       line-height: 17px;
@@ -226,7 +228,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1040px) {
   .menu {
     display: block;
   }
