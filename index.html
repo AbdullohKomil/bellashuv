@@ -1,264 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main Page</title>
-  <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="container">
-      <div class="site-header__inner">
-        <button onclick="menu()" class="menu"></button>
-        <a class="logo" href="./index.html">
-          <img src="./images/logo.svg" alt="Logo" />
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="./news.html">Biz haqimizda</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Xizmatlarimiz</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Buyurtma berish</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="site-header__main">
-          <input type="checkbox" id="theme-btn" />
-          <label onclick="theme()" class="site-header__main__label" for="theme-btn"></label>
-          <span>
-            <a href="tel:998907777777"> +998 90 777-77-77 </a>
-            <a href="mailto:chotatam@gmail.com"> chotatam@gmail.com </a>
-          </span>
-          <button>Заказать звонок</button>
-        </div>
-        <button onclick="theme()" class="mobile-theme"></button>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="hero__bg">
-        <div class="container">
-          <div class="hero__inner">
-            <div class="hero__content">
-              <h1 class="hero__title">
-                Biz veb saytlar, ilovalarni ishlab chiqamiz
-              </h1>
-              <p class="hero__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam.
-              </p>
-              <div class="hero__bottom">
-                <a class="hero__link" href="./portfolio.html"> Портфолио </a>
-                <a class="hero__link--2" href="./portfolio.html">
-                  Портфолио
-                </a>
-              </div>
-            </div>
-            <div class="hero__globus">
-              <div>
-                <canvas id="cobe" width="1200" height="1200"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="company">
+  <body>
+    <header class="site-header">
       <div class="container">
-        <div class="company__inner">
-          <div class="company__left">
-            <h2 class="company__title">Kompaniya haqida</h2>
-            <p class="company__text" title="Kompaniya haqida">
-              Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va
-              innovatsion echimlarni taqdim etish maqsadida tashkil etilgan
-              veb-agentlik. Bizning jamoamiz mijozlarga moslashtirilgan va
-              sifatli mahsulotni taklif qilish uchun yaqin hamkorlikda
-              ishlaydigan tajribali veb-dizayn, ishlab chiqish va marketing
-              mutaxassislaridan iborat.
-            </p>
-            <span class="company__text__span">
-              Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO
-              optimallashtirish, kontent yaratish va reklama kampaniyalarini
-              o'z ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz
-              eng yangi texnologiyalar va innovatsion usullardan foydalangan
-              holda brendni rivojlantirish va sotishni ko'paytirish bilan
-              shug'ullanamiz.
+        <div class="site-header__inner">
+          <button onclick="menu()" class="menu"></button>
+          <a class="logo" href="./index.html">
+            <img src="./images/logo.svg" alt="Logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="./news.html">Biz haqimizda</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Xizmatlarimiz</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Buyurtma berish</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="site-header__main">
+            <input type="checkbox" id="theme-btn" />
+            <label
+              onclick="theme()"
+              class="site-header__main__label"
+              for="theme-btn"
+            ></label>
+            <span>
+              <a href="tel:998907777777"> +998 90 777-77-77 </a>
+              <a href="mailto:chotatam@gmail.com"> chotatam@gmail.com </a>
             </span>
+            <button>Заказать звонок</button>
           </div>
-          <div class="company__right">
-            <div class="company__cards">
-              <div class="company__card">
-                <h2 class="company__card__title">20+</h2>
-                <p class="company__card__text">Проектов запустил</p>
+          <button onclick="theme()" class="mobile-theme"></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__bg">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Biz veb saytlar, ilovalarni ishlab chiqamiz
+                </h1>
+                <p class="hero__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+                <div class="hero__bottom">
+                  <a class="hero__link" href="./portfolio.html"> Портфолио </a>
+                  <a class="hero__link--2" href="./portfolio.html">
+                    Портфолио
+                  </a>
+                </div>
               </div>
-              <div class="company__card">
-                <h2 class="company__card__title">4 года</h2>
-                <p class="company__card__text">Опыта разработки</p>
-              </div>
-              <div class="company__card">
-                <h2 class="company__card__title">12+</h2>
-                <p class="company__card__text">Профессионалов</p>
-              </div>
-              <div class="company__card">
-                <h2 class="company__card__title">4 года</h2>
-                <p class="company__card__text">Опыта разработки</p>
+              <div class="hero__globus">
+                <div>
+                  <canvas id="cobe" width="1200" height="1200"></canvas>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="projects">
-      <div class="container">
-        <div class="projects__inner">
-          <h2 class="projects__title">
-            Bajargan loyihalarimiz
-          </h2>
-          <ul class="projects__nav">
-            <li class="projects__nav__item projects__nav__item--active">
-              Barchasi
-            </li>
-            <li class="projects__nav__item">
-              Veb sayt
-            </li>
-            <li class="projects__nav__item">
-              Veb dizayn
-            </li>
-            <li class="projects__nav__item">
-              SMM
-            </li>
-            <li class="projects__nav__item">
-              Mobil ilova
-            </li>
-          </ul>
-          <ul class="projects__list">
-            <li class="projects__item">
-              <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
-            </li>
-            <li class="projects__item">
-              <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
-            </li>
-            <li class="projects__item">
-              <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
-            </li>
-            <li class="projects__item">
-              <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
-            </li>
-            <li class="projects__item">
-              <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
-            </li>
-            <li class="projects__item">
-              <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
-            </li>
-          </ul>
-          <div class="projects__bottom">
-            <a class="projects__bottom__link" href="./portfolio.html">
-              <span>Barchasini</span> <span>ko’rish</span>
-            </a>
-            <a class="projects__bottom__link--2" href="./portfolio.html">
-              <span>Barchasini</span> <span>ko’rish</span>
-            </a>
+      </section>
+      <section class="company">
+        <div class="container">
+          <div class="company__inner">
+            <div class="company__left">
+              <h2 class="company__title">Kompaniya haqida</h2>
+              <p class="company__text" title="Kompaniya haqida">
+                Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va
+                innovatsion echimlarni taqdim etish maqsadida tashkil etilgan
+                veb-agentlik. Bizning jamoamiz mijozlarga moslashtirilgan va
+                sifatli mahsulotni taklif qilish uchun yaqin hamkorlikda
+                ishlaydigan tajribali veb-dizayn, ishlab chiqish va marketing
+                mutaxassislaridan iborat.
+              </p>
+              <span class="company__text__span">
+                Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO
+                optimallashtirish, kontent yaratish va reklama kampaniyalarini
+                o'z ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz
+                eng yangi texnologiyalar va innovatsion usullardan foydalangan
+                holda brendni rivojlantirish va sotishni ko'paytirish bilan
+                shug'ullanamiz.
+              </span>
+            </div>
+            <div class="company__right">
+              <div class="company__cards">
+                <div class="company__card">
+                  <h2 class="company__card__title">20+</h2>
+                  <p class="company__card__text">Проектов запустил</p>
+                </div>
+                <div class="company__card">
+                  <h2 class="company__card__title">4 года</h2>
+                  <p class="company__card__text">Опыта разработки</p>
+                </div>
+                <div class="company__card">
+                  <h2 class="company__card__title">12+</h2>
+                  <p class="company__card__text">Профессионалов</p>
+                </div>
+                <div class="company__card">
+                  <h2 class="company__card__title">4 года</h2>
+                  <p class="company__card__text">Опыта разработки</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="services">
-      <div class="container">
-        <div class="services__inner">
-          <h2>Bizning xizmatlar</h2>
-          <ul class="services__list">
-            <li class="services__item">
-              <h3 class="services__subtitle">Veb saytlar</h3>
-              <p>
-                Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
-              </p>
-            </li>
-            <li class="services__item">
-              <h3 class="services__subtitle">UI/UX Dizayn</h3>
-              <p>
-                Biz UI/UX dizayn xizmatlarini <br />
-                taqdim etamiz
-              </p>
-            </li>
-            <li class="services__item">
-              <h3 class="services__subtitle">Mobil ilovalar</h3>
-              <p>Biz eng yaxshi dizaynerlar xizmatlarini taqdim etamiz</p>
-            </li>
-            <li class="services__item">
-              <h3 class="services__subtitle">SMM</h3>
-              <p>
-                Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
-              </p>
-            </li>
-            <li class="services__item">
-              <h3 class="services__subtitle">Grafik dizayn</h3>
-              <p>Biz fotografiya xizmatlarini <br />taqdim etamiz</p>
-            </li>
-            <li class="services__item">
-              <h3 class="services__subtitle">Motion dizayn</h3>
-              <p>
-                Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
-              </p>
-            </li>
-          </ul>
+      </section>
+      <section class="projects">
+        <div class="container">
+          <div class="projects__inner">
+            <h2 class="projects__title">Bajargan loyihalarimiz</h2>
+            <ul class="projects__nav">
+              <li class="projects__nav__item projects__nav__item--active">
+                Barchasi
+              </li>
+              <li class="projects__nav__item">Veb sayt</li>
+              <li class="projects__nav__item">Veb dizayn</li>
+              <li class="projects__nav__item">SMM</li>
+              <li class="projects__nav__item">Mobil ilova</li>
+            </ul>
+            <ul class="projects__list">
+              <li class="projects__item">
+                <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
+              </li>
+              <li class="projects__item">
+                <a href="" class="projects__link">UYMAKON mobil ilovasi</a>
+              </li>
+            </ul>
+            <div class="projects__bottom">
+              <a class="projects__bottom__link" href="./portfolio.html">
+                <span>Barchasini</span> <span>ko’rish</span>
+              </a>
+              <a class="projects__bottom__link--2" href="./portfolio.html">
+                <span>Barchasini</span> <span>ko’rish</span>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="team">
-      <div class="container">
-        <div class="team-__inner">
-          <h2>
-            Bizning jamoa
-          </h2>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="services__inner">
+            <h2>Bizning xizmatlar</h2>
+            <ul class="services__list">
+              <li class="services__item">
+                <h3 class="services__subtitle">Veb saytlar</h3>
+                <p>
+                  Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
+                </p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">UI/UX Dizayn</h3>
+                <p>
+                  Biz UI/UX dizayn xizmatlarini <br />
+                  taqdim etamiz
+                </p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">Mobil ilovalar</h3>
+                <p>Biz eng yaxshi dizaynerlar xizmatlarini taqdim etamiz</p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">SMM</h3>
+                <p>
+                  Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
+                </p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">Grafik dizayn</h3>
+                <p>Biz fotografiya xizmatlarini <br />taqdim etamiz</p>
+              </li>
+              <li class="services__item">
+                <h3 class="services__subtitle">Motion dizayn</h3>
+                <p>
+                  Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <div class="team-__inner">
+            <h2>Bizning jamoa</h2>
+            <div class="team__list">
+              <li class="team__item">
+                <img src="./images/team-item1.png" alt="Person" />
+                <div class="team__content">
+                  <h3 class="team__subtitle">John Doe</h3>
+                  <span class="team__list__line"></span>
+                  <p>Frontend dasturchi</p>
+                </div>
+              </li>
+              <li class="team__item">
+                <img src="./images/team-item2.png" alt="Person" />
+                <div class="team__content">
+                  <h3 class="team__subtitle">Tonny Cross</h3>
+                  <span class="team__list__line"></span>
+                  <p>SMM designer</p>
+                </div>
+              </li>
+              <li class="team__item">
+                <img src="./images/team-item3.png" alt="Person" />
+                <div class="team__content">
+                  <h3 class="team__subtitle">Lionel Messi</h3>
+                  <span class="team__list__line"></span>
+                  <p>Project Manager</p>
+                </div>
+              </li>
+              <li class="team__item">
+                <img src="./images/team-item4.png" alt="Person" />
+                <div class="team__content">
+                  <h3 class="team__subtitle">John Cena</h3>
+                  <span class="team__list__line"></span>
+                  <p>UX/UI web designer</p>
+                </div>
+              </li>
+              <li class="team__item">
+                <img src="./images/team-item1.png" alt="Person" />
+                <div class="team__content">
+                  <h3 class="team__subtitle">John Doe</h3>
+                  <span class="team__list__line"></span>
+                  <p>Frontend dasturchi</p>
+                </div>
+              </li>
+              <li class="team__item">
+                <img src="./images/team-item2.png" alt="Person" />
+                <div class="team__content">
+                  <h3 class="team__subtitle">Tonny Cross</h3>
+                  <span class="team__list__line"></span>
+                  <p>SMM designer</p>
+                </div>
+              </li>
+              <li class="team__item">
+                <img src="./images/team-item3.png" alt="Person" />
+                <div class="team__content">
+                  <h3 class="team__subtitle">Lionel Messi</h3>
+                  <span class="team__list__line"></span>
+                  <p>Project Manager</p>
+                </div>
+              </li>
+              <li class="team__item">
+                <img src="./images/team-item4.png" alt="Person" />
+                <div class="team__content">
+                  <h3 class="team__subtitle">John Cena</h3>
+                  <span class="team__list__line"></span>
+                  <p>UX/UI web designer</p>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MENU -->
+
+    <div class="site-menu">
+      <div class="site-menu__header">
+        <a href="./index.html">
+          <img src="./images/logo-dark.svg" alt="Logo" />
+        </a>
+        <button onclick="closeMenu()" class="menu-close"></button>
       </div>
-    </section>
-  </main>
-
-  <!-- MENU -->
-
-  <div class="site-menu">
-    <div class="site-menu__header">
-      <a href="./index.html">
-        <img src="./images/logo-dark.svg" alt="Logo" />
-      </a>
-      <button onclick="closeMenu()" class="menu-close"></button>
+      <nav>
+        <ul>
+          <li>
+            <a href="/news.html"> Biz haqimizda </a>
+          </li>
+          <li>
+            <a href="/portfolio.html"> Portfolio </a>
+          </li>
+          <li>
+            <a href="/index.html"> Xizmatlarimiz </a>
+          </li>
+          <li>
+            <a href="/index.html"> Buyurtma berish </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:999999999">(99) 999 9999</a>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="/news.html"> Biz haqimizda </a>
-        </li>
-        <li>
-          <a href="/portfolio.html"> Portfolio </a>
-        </li>
-        <li>
-          <a href="/index.html"> Xizmatlarimiz </a>
-        </li>
-        <li>
-          <a href="/index.html"> Buyurtma berish </a>
-        </li>
-      </ul>
-    </nav>
-    <a href="tel:999999999">(99) 999 9999</a>
-  </div>
 
-  <script type="module">
+    <!-- <script type="module">
     // import createGlobe from 'https://cdn.skypack.dev/cobe';
 
     let phi = 0;
@@ -288,11 +345,48 @@
         phi += 0.01;
       },
     });
-  </script>
-  <script src="./js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./slick-1.8.1/slick/slick.min.js"></script>
-  <script src="./js/main.js"></script>
-</body>
-
+  </script> -->
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $('.team__list').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 500,
+        centerMode: false,
+        centerPadding: '0px',
+        responsive: [
+          {
+            breakpoint: 1346,
+            settings: {
+              arrows: true,
+              centerMode: false,
+              centerPadding: '0px',
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 1046,
+            settings: {
+              arrows: true,
+              centerMode: false,
+              centerPadding: '0px',
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
 </html>
