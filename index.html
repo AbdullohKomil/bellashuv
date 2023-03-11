@@ -4,14 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Main Page</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="site-header" >
+    <header class="site-header">
       <div class="container">
-        
+        <div class="site-header__inner">
+          <button onclick="menu()" class="menu"></button>
+          <a class="logo" href="./index.html">
+            <img src="./images/logo.svg" alt="Logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="./news.html">O компании</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="site-header__main">
+            <input type="checkbox" id="theme-btn" />
+            <label
+              onclick="theme()"
+              class="site-header__main__label"
+              for="theme-btn"
+            ></label>
+            <span>
+              <a href="tel:998907777777"> +998 90 777-77-77 </a>
+              <a href="mailto:chotatam@gmail.com"> chotatam@gmail.com </a>
+            </span>
+            <button>Заказать звонок</button>
+          </div>
+          <button onclick="theme()" class="mobile-theme" ></button>
+        </div>
       </div>
     </header>
+
+    <!-- MENU -->
+
+    <div class="site-menu">
+      <div class="site-menu__header">
+        <a href="./index.html">
+          <img src="./images/logo-dark.svg" alt="Logo" />
+        </a>
+        <button onclick="closeMenu()" class="menu-close"></button>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/news.html"> Biz haqimizda </a>
+          </li>
+          <li>
+            <a href="/portfolio.html"> Portfolio </a>
+          </li>
+          <li>
+            <a href="/index.html"> Xizmatlarimiz </a>
+          </li>
+          <li>
+            <a href="/index.html"> Buyurtma berish </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:999999999">(99) 999 9999</a>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
