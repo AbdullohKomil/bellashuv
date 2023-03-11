@@ -10,6 +10,9 @@
   --bgi-menu-btn: url('../../images/menu-icon.svg');
   --pos-menu: translateY(-110%);
   --theme-icon: url('../../images/sun-icon.svg');
+  --bg-services: #ffffffe6;
+  --border-services: 1px solid #999999;
+  --services-text: #272727b3;
 }
 
 .dark {
@@ -23,6 +26,9 @@
   --bgi-menu-btn: url('../../images/menu-icon-dark.svg');
   --bg-mode-btn: transparent;
   --theme-icon: url('../../images/moon-icon.svg');
+  --bg-services: #0e1014e6;
+  --border-services: 1px solid #4E4E4E;
+  --services-text: #ffffffa7;
 }
 
 .menu-open {

@@ -10,6 +10,9 @@
   --bgi-menu-btn: url("../../images/menu-icon.svg");
   --pos-menu: translateY(-110%);
   --theme-icon: url("../../images/sun-icon.svg");
+  --bg-services: #ffffffe6;
+  --border-services: 1px solid #999999;
+  --services-text: #272727b3;
 }
 
 .dark {
@@ -23,6 +26,9 @@
   --bgi-menu-btn: url("../../images/menu-icon-dark.svg");
   --bg-mode-btn: transparent;
   --theme-icon: url("../../images/moon-icon.svg");
+  --bg-services: #0e1014e6;
+  --border-services: 1px solid #4E4E4E;
+  --services-text: #ffffffa7;
 }
 
 .menu-open {
@@ -1020,7 +1026,7 @@ p {
   background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911ad 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Futura PT";
+  font-family: "Arial";
   font-weight: 600;
   font-size: 50px;
   line-height: 100%;
@@ -1032,7 +1038,7 @@ p {
 }
 
 .company__card__text {
-  font-family: "Futura PT";
+  font-family: "Arial";
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -1105,13 +1111,13 @@ p {
   font-size: 36px;
   line-height: 44px;
   text-align: center;
-  color: #000000;
+  color: var(--main-color);
 }
 
 .services__inner {
   padding: 40px 0 90px;
-  background: rgba(255, 255, 255, 0.9019607843);
-  border: 1px solid #999999;
+  background-color: var(--bg-services);
+  border: var(--border-services);
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
   border-radius: 20px;
@@ -1212,7 +1218,7 @@ p {
   line-height: 38px;
   text-align: center;
   letter-spacing: -0.750316px;
-  color: #000000;
+  color: var(--main-color);
 }
 
 .services__subtitle ~ p {
@@ -1223,7 +1229,7 @@ p {
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.500211px;
-  color: rgba(39, 39, 39, 0.7019607843);
+  color: var(--services-text);
 }
 
 @media only screen and (max-width: 1185px) {
